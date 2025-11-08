@@ -1,0 +1,237 @@
+/* Hero Section */
+.hero {
+  background-image: 
+    linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.85)),
+    url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: calc(var(--spacing-xl) * 2) 0;
+  text-align: center;
+  border-bottom: 3px solid var(--accent-gold);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-gold);
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.8;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary,
+.btn-hero-secondary {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.btn-hero-primary {
+  background-color: var(--accent-gold);
+  color: var(--text-dark);
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--accent-gold-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-hero-secondary {
+  background-color: transparent;
+  color: var(--accent-gold);
+  border: 2px solid var(--accent-gold);
+}
+
+.btn-hero-secondary:hover {
+  background-color: var(--accent-gold);
+  color: var(--text-dark);
+}
+
+/* Secciones Generales */
+.houses-section,
+.info-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-gold);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Grid de Casas */
+.houses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.house-card {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 2px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.house-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-gold);
+}
+
+.house-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.house-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.house-region {
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.house-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.btn-house {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.btn-house:hover {
+  background-color: var(--accent-gold);
+  color: var(--text-dark);
+  border-color: var(--accent-gold);
+}
+
+/* Colores específicos por casa */
+.house-stark { border-top: 4px solid var(--house-stark); }
+.house-martell { border-top: 4px solid var(--house-martell); }
+.house-lannister { border-top: 4px solid var(--house-lannister); }
+.house-greyjoy { border-top: 4px solid var(--house-greyjoy); }
+
+/* Sección de Información */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.info-card {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.info-number {
+  width: 60px;
+  height: 60px;
+  background-color: var(--accent-gold);
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Call to Action */
+.cta-section {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-top: 2px solid var(--accent-gold);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-cta {
+  background-color: var(--accent-gold);
+  color: var(--text-dark);
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.btn-cta:hover {
+  background-color: var(--accent-gold-dark);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
