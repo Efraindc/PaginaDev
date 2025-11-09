@@ -1,0 +1,77 @@
+
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 2px solid var(--accent-gold);
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+/* Secciones del Footer */
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-gold);
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-gold);
+}
+
+.footer-section p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Links del Footer */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+  padding-left: 5px;
+}
+
+/* Lista de Casas */
+.footer-houses {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer-houses li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Parte inferior del Footer */
+.footer-bottom {
+  background-color: var(--bg-primary);
+  padding: var(--spacing-sm) 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
