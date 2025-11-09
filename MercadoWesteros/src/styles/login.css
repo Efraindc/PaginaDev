@@ -1,0 +1,81 @@
+/* Game of Thrones themed login styles */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.login-card {
+  width: 360px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.75));
+  padding: 28px;
+  border-radius: 10px;
+  color: #f5f5f5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.login-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.08);
+  margin-bottom: 10px;
+}
+
+.login-title {
+  margin: 6px 0 4px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.login-sub {
+  font-size: 12px;
+  color: #d9d9d9;
+  margin-bottom: 16px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: #fff;
+  outline: none;
+}
+
+.login-input::placeholder { color: #cfcfcf; }
+
+.login-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #a31f1f, #ff3b3b);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(163, 31, 31, 0.28);
+}
+
+.login-btn:hover { transform: translateY(-1px); }
+
+.login-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #d0cfcf;
+}
+
+@media (max-width: 420px) {
+  .login-card { width: 92%; padding: 18px; }
+}

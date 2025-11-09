@@ -1,0 +1,58 @@
+/* Styles for Regiones page */
+.regiones-hero {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.regiones-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.regiones-hero-inner {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.regiones-hero h1 { font-size: 34px; margin: 0 0 8px; }
+.regiones-hero p { margin: 0 0 12px; color: #e8dcd0; }
+
+.regiones-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  padding: 26px 18px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.region-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+  padding: 16px;
+  border-radius: 8px;
+  color: #f7f1ea;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.region-card h3 { margin: 0 0 8px; }
+.region-card p { margin: 0; color: #ddd; }
+
+.btn-oval.small {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.06);
+}

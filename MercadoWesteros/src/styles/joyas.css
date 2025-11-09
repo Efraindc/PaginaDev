@@ -1,0 +1,100 @@
+.joyas-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+  padding: 2rem;
+}
+
+.joyas-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.joyas-header h1 {
+  color: #ffd700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.joyas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.joya-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background: rgba(20, 20, 20, 0.9);
+  padding-bottom: 20px;
+}
+
+.joya-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.joya-imagen {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.joya-info {
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.joya-info h3 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin: 0 0 0.5rem;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.joya-descripcion {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.joya-historia {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  border-left: 2px solid #ffd700;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .joyas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .joyas-header h1 {
+    font-size: 2rem;
+  }
+}

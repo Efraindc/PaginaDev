@@ -1,0 +1,178 @@
+/* ===== FONDO Y CONTENEDOR GENERAL ===== */
+.home-bg {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background: #0f0b0b url("../imgs/fondo.jpg") center/cover no-repeat fixed;
+  color: #f5f5f5;
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.home-header {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.logo {
+  width: 90px;
+  border-radius: 50%;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+/* LINKS */
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff3b3b;
+}
+
+/* Estilo especial para el enlace de Joyas — lo diferencia en la barra de navegación */
+.nav-links a.nav-joyas {
+  color: #ffd700;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.12);
+  padding-bottom: 2px;
+}
+
+.nav-links a.nav-joyas:hover {
+  color: #fff7d9;
+  border-bottom-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Badge next to Joyas link */
+.joya-badge {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255,215,0,0.12), rgba(255,215,0,0.06));
+  border: 1px solid rgba(255,215,0,0.08);
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.home-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 2rem;
+}
+
+/* TARJETAS OVALES */
+.oval-card {
+  position: relative;
+  text-align: center;
+}
+
+.oval-img {
+  width: 270px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 130px;
+  filter: brightness(85%);
+  transition: 0.3s ease;
+}
+
+.oval-img:hover {
+  filter: brightness(100%);
+}
+
+/* BOTONES TARJETAS */
+.btn-oval {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: 1.5px solid white;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-oval:hover {
+  background: #a60000;
+  border-color: #a60000;
+}
+
+/* BANNER CENTRAL */
+.banner-center {
+  position: relative;
+}
+
+.banner-img {
+  width: 310px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(90%);
+}
+
+.btn-center {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: 1.5px solid white;
+  padding: 10px 22px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-center:hover {
+  background: #a60000;
+  border-color: #a60000;
+}
+
+/* =============================================================
+   📱 RESPONSIVE DESIGN - PARA PANTALLAS PEQUEÑAS
+   ============================================================= */
+@media (max-width: 1024px) {
+  .home-content {
+    gap: 2rem;
+  }
+  .banner-img { width: 260px; height: 430px; }
+  .oval-img { width: 220px; height: 340px; border-radius: 100px; }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+  display: flex;
+  justify-content: flex-start; /* mueve a la izquierda */
+  gap: 12px; /* opcional */
+}
+
+}
